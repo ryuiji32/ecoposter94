@@ -1,0 +1,386 @@
+body {
+	background-color: black;
+	min-height: 100vh;
+	align-items: center;
+	flex-direction: column;  
+
+	display: flex;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	
+}
+
+.q {
+	color: lightgray;
+}
+.q:hover {
+	color: red; 
+	text-decoration: underline;
+}
+
+.date {
+	color: lightgray;
+}
+.date:hover {
+	color: skyblue;
+}
+
+
+
+.header-zone {
+	width: 100%;
+	text-align: center;
+	padding: 40px 20px 20px 20px;
+	box-sizing: border-box;
+}
+
+h1 {
+	text-align: center;
+	
+	color: white;
+	font-size: 100%;
+	
+	font-weight: bold;
+	letter-spacing: 2%;
+
+}
+
+h2 {
+	text-align: center;
+	color: white;
+	font-size: 130%;
+	
+	letter-spacing: 5%;
+}
+
+h3 {
+	color: white;
+	font-size: 100%;
+	text-align: center;
+	
+
+}
+
+h4 {
+	color: lightgray;
+	position: fixed;
+	right: 20%;
+	bottom: 20%;
+	margin: 0;
+	z-index: 999;
+}
+
+h5 {
+	color: gray;
+	position: fixed;
+	left: 30px;
+	bottom: 20px;
+	margin: 0;
+	z-index: 999;
+}
+
+h1, h2, h3, p, span, div {
+    word-break: keep-all;
+}
+
+ul {
+	position: relative;
+	width: 100%;
+	
+	list-style: none;
+	padding: 0;
+	margin: 0 ;
+}
+
+@media (max-width: 768px) {
+	ul.content-zone {
+		grid-template-columns: repeat(2, 1fr); /* 화면이 작아지면 2열 배치로 자동 조절 */
+		gap: 15px;
+	}
+	
+	h1 { font-size: 200%; } /* 글자 크기도 화면에 맞게 약간 축소 */
+	h2 { font-size: 250%; }
+	h3 { font-size: 130%; }
+}
+
+@media (max-width: 480px) {
+	ul.content-zone {
+		grid-template-columns: repeat(1, 1fr); /* 아주 작은 모바일에서는 1열 배치 */
+	}
+}
+
+.egg {
+	width: 100%;
+	height: auto;
+	max-width: 30%;
+	margin: 20px;
+	animation: floating-wb 12s ease-in-out infinite;
+	transition: transform 0.4s ease;
+}
+
+.egg0 {
+	position: fixed;        
+	left: 30%;
+	top: 50%; 
+	width: 100px;
+	height: auto;
+	transform: translate(calc(-50% - 110px), -50%);
+	margin: 0;
+	z-index: 10;
+	animation: floating-wb 12s ease-in-out infinite;
+	transition: transform 0.4s ease;
+	
+}
+
+.egg01 {
+	position: fixed;        
+	left: 50%;
+	top: 50%; 
+	width: 490px;
+	height: auto;
+	transform: translate(calc(-50% + 110px), -50%);
+	margin: 0;
+	z-index: 10;
+}
+
+.egg:hover {
+	transform: scale(1.1);         
+	      
+	cursor: pointer;             	
+
+	animation-play-state: paused; 
+}
+
+
+.image-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); 
+	gap: 30px;                           
+	width: 100%;
+	max-width: 1000px;                  
+	justify-items: center;                
+	align-items: center;
+}
+
+.image-grid a {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.wb {
+	width: 100%;
+	height: auto;
+	max-width: 30%;
+	left: 10%;
+	top: 10%;
+	animation: floating-wb 12s ease-in-out infinite;
+	transition: transform 0.4s ease;
+}
+
+.wb0 {
+	position: fixed;        
+	left: 30%;
+	top: 50%; 
+	width: 100px;
+	height: auto;
+	transform: translate(calc(-50% - 110px), -50%);
+	margin: 0;
+	z-index: 10;
+	transition: transform 0.4s ease;
+}
+
+.wb01 {
+	position: fixed;        
+	left: 50%;
+	top: 50%; 
+	width: 490px;
+	height: auto;
+	transform: translate(calc(-50% + 110px), -50%);
+	margin: 0;
+	z-index: 10;
+}
+
+.wb:hover {
+	transform: scale(1.1);         
+	       
+	cursor: pointer;             	
+
+	animation-play-state: paused; 
+}
+
+.af {
+	width: 100%;
+	height: auto;
+	max-width: 30%;
+	animation: floating-wb 12s ease-in-out infinite;
+	transition: transform 0.4s ease;
+}
+
+.af0 {
+	position: fixed;        
+	left: 30%;
+	top: 50%; 
+	width: 100px;
+	height: auto;
+	transform: translate(calc(-50% - 110px), -50%);
+	margin: 0;
+	z-index: 10;
+	transition: transform 0.4s ease;
+}
+
+.af01 {
+	position: fixed;        
+	left: 50%;
+	top: 50%; 
+	width: 310px;
+	height: auto;
+	transform: translate(calc(-50% + 110px), -50%);
+	margin: 0;
+	z-index: 10;
+}
+
+.af:hover {
+	transform: scale(1.1);         
+	      
+	cursor: pointer;             	
+
+	animation-play-state: paused; 
+}
+
+
+.bird {
+	width: 100%;
+	height: auto;
+	max-width: 25%;
+	animation: floating-wb 12s ease-in-out infinite;
+	transition: transform 0.4s ease;
+}
+
+.bird0 {
+	position: fixed;        
+	left: 30%;
+	top: 50%; 
+	width: 100px;
+	height: auto;
+	transform: translate(calc(-50% - 110px), -50%);
+	margin: 0;
+	z-index: 10;
+	transition: transform 0.4s ease;
+}
+
+.bird01 {
+	position: fixed;        
+	left: 50%;
+	top: 50%; 
+	width: 490px;
+	height: auto;
+	transform: translate(calc(-50% + 110px), -50%);
+	margin: 0;
+	z-index: 10;
+}
+
+.bird:hover {
+	transform: scale(1.1);         
+	      
+	cursor: pointer;             	
+
+	animation-play-state: paused; 
+}
+
+
+.frog {
+	width: 100%;
+	height: auto;
+	max-width: 35%;
+	animation: floating-wb 12s ease-in-out infinite;
+	transition: transform 0.4s ease;
+}
+
+
+.frog01 {
+	position: fixed;        
+	left: 35%;
+	top: 50%; 
+	width: 270px;
+	height: auto;
+	transform: translate(calc(-50% - 110px), -50%);
+	margin: 0;
+	z-index: 10;
+	transition: transform 0.4s ease;
+
+}
+
+.frog02 {
+	position: fixed;        
+	left: 60%;
+	top: 50%; 
+	width: 430px;
+	height: auto;
+	transform: translate(calc(-50% + 110px), -50%);
+	margin: 0;
+	z-index: 10;
+}
+
+
+
+.frog:hover {
+	transform: scale(1.1);         
+	      
+	cursor: pointer;             	
+
+	animation-play-state: paused; 
+}
+
+.butterfly {
+	width: 100%;
+	height: auto;
+	max-width: 30%;
+	animation: floating-wb 12s ease-in-out infinite;
+	transition: transform 0.4s ease;
+}
+
+.butterfly0 {
+	position: fixed;        
+	left: 30%;
+	top: 50%; 
+	width: 230px;
+	height: auto;
+	transform: translate(calc(-50% - 110px), -50%);
+	margin: 0;
+	z-index: 10;
+	transition: transform 0.4s ease;
+}
+
+.butterfly01 {
+	position: fixed;        
+	left: 50%;
+	top: 50%; 
+	width: 400px;
+	height: auto;
+	transform: translate(calc(-50% + 110px), -50%);
+	margin: 0;
+	z-index: 10;
+}
+
+.butterfly:hover {
+	transform: scale(1.1);         
+	      
+	cursor: pointer;             	
+
+	animation-play-state: paused; 
+}
+
+.book {
+	position: fixed;        
+	left: ;
+	
+	width: 300px;
+	height: auto;
+	transform: translate(calc(-50% - 50%);
+	margin: 0;
+	z-index: 10;
+}
+
+
