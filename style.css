@@ -148,7 +148,7 @@ ul {
 
 .egg0 {
     position: relative;
-    width: 6vw;         
+    width: 10vw;         
     min-width: 45px;    
     height: auto;
     margin: 0;
@@ -161,7 +161,7 @@ ul {
 
 .egg01 {
     position: relative;
-    width: 28vw;        
+    width: 35vw;        
     min-width: 200px;   
     height: auto;
     margin: 0;
@@ -177,15 +177,7 @@ ul {
 }
 
 
-.image-grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr); 
-	gap: 30px;                           
-	width: 100%;
-	max-width: 1000px;                  
-	justify-items: center;                
-	align-items: center;
-}
+
 
 .image-grid a {
 	display: block;
@@ -203,27 +195,38 @@ ul {
 	transition: transform 0.4s ease;
 }
 
+.wb-wrapper {
+    
+    position: fixed; 
+    left: 50vw;
+    top: 50vh;
+    width: max-content; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw; 
+    transform: translate(-50%, -50%);
+    z-index: 100; 
+}
+
 .wb0 {
-	position: fixed;        
-	left: 30%;
-	top: 50%; 
-	width: 100px;
-	height: auto;
-	transform: translate(calc(-50% - 110px), -50%);
-	margin: 0;
-	z-index: 10;
-	transition: transform 0.4s ease;
+	 position: relative;
+    width: 10vw;         
+    min-width: 45px;    
+    height: auto;
+    margin: 0;
+    
+    
+    animation: floating-wb 12s ease-in-out infinite;
+    transition: transform 0.4s ease;
 }
 
 .wb01 {
-	position: fixed;        
-	left: 50%;
-	top: 50%; 
-	width: 490px;
-	height: auto;
-	transform: translate(calc(-50% + 110px), -50%);
-	margin: 0;
-	z-index: 10;
+	position: relative;
+    width: 45vw;        
+    min-width: 200px;   
+    height: auto;
+    margin: 0;
 }
 
 .wb:hover {
@@ -242,28 +245,40 @@ ul {
 	transition: transform 0.4s ease;
 }
 
+.af-wrapper {
+    
+    position: fixed; 
+    left: 50vw;
+    top: 50vh;
+    width: max-content; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw; 
+    transform: translate(-50%, -50%);
+    z-index: 100; 
+}
+
 .af0 {
-	position: fixed;        
-	left: 30%;
-	top: 50%; 
-	width: 100px;
-	height: auto;
-	transform: translate(calc(-50% - 110px), -50%);
-	margin: 0;
-	z-index: 10;
-	transition: transform 0.4s ease;
+	 position: relative;
+    width: 6vw;         
+    min-width: 45px;    
+    height: auto;
+    margin: 0;
+    
+    
+    animation: floating-wb 12s ease-in-out infinite;
+    transition: transform 0.4s ease;
 }
 
 .af01 {
-	position: fixed;        
-	left: 50%;
-	top: 50%; 
-	width: 310px;
-	height: auto;
-	transform: translate(calc(-50% + 110px), -50%);
-	margin: 0;
-	z-index: 10;
+	position: relative;
+    width: 28vw;        
+    min-width: 200px;   
+    height: auto;
+    margin: 0;
 }
+
 
 .af:hover {
 	transform: scale(1.1);         
@@ -282,28 +297,40 @@ ul {
 	transition: transform 0.4s ease;
 }
 
+.bird-wrapper {
+    
+    position: fixed; 
+    left: 50vw;
+    top: 50vh;
+    width: max-content; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw; 
+    transform: translate(-50%, -50%);
+    z-index: 100; 
+}
+
 .bird0 {
-	position: fixed;        
-	left: 30%;
-	top: 50%; 
-	width: 100px;
-	height: auto;
-	transform: translate(calc(-50% - 110px), -50%);
-	margin: 0;
-	z-index: 10;
-	transition: transform 0.4s ease;
+	position: relative;
+    width: 10vw;         
+    min-width: 45px;    
+    height: auto;
+    margin: 0;
+    
+    
+    animation: floating-wb 12s ease-in-out infinite;
+    transition: transform 0.4s ease;
 }
 
 .bird01 {
-	position: fixed;        
-	left: 50%;
-	top: 50%; 
-	width: 490px;
-	height: auto;
-	transform: translate(calc(-50% + 110px), -50%);
-	margin: 0;
-	z-index: 10;
+	position: relative;
+    width: 40vw;        
+    min-width: 200px;   
+    height: auto;
+    margin: 0;
 }
+
 
 .bird:hover {
 	transform: scale(1.1);         
@@ -323,31 +350,39 @@ ul {
 }
 
 
-.frog01 {
-	position: fixed;        
-	left: 35%;
-	top: 50%; 
-	width: 270px;
-	height: auto;
-	transform: translate(calc(-50% - 110px), -50%);
-	margin: 0;
-	z-index: 10;
-	transition: transform 0.4s ease;
+.frog-wrapper {
+    
+    position: fixed; 
+    left: 50vw;
+    top: 50vh;
+    width: max-content; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw; 
+    transform: translate(-50%, -50%);
+    z-index: 100; 
+}
 
+.frog01 {
+	position: relative;
+    width: 30vw;         
+    min-width: 45px;    
+    height: auto;
+    margin: 0;
+    
+    
+    animation: floating-wb 12s ease-in-out infinite;
+    transition: transform 0.4s ease;
 }
 
 .frog02 {
-	position: fixed;        
-	left: 60%;
-	top: 50%; 
-	width: 430px;
-	height: auto;
-	transform: translate(calc(-50% + 110px), -50%);
-	margin: 0;
-	z-index: 10;
+	position: relative;
+    width: 28vw;        
+    min-width: 200px;   
+    height: auto;
+    margin: 0;
 }
-
-
 
 .frog:hover {
 	transform: scale(1.1);         
@@ -365,28 +400,40 @@ ul {
 	transition: transform 0.4s ease;
 }
 
+.butterfly-wrapper {
+    
+    position: fixed; 
+    left: 50vw;
+    top: 50vh;
+    width: max-content; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw; 
+    transform: translate(-50%, -50%);
+    z-index: 100; 
+}
+
 .butterfly0 {
-	position: fixed;        
-	left: 30%;
-	top: 50%; 
-	width: 230px;
-	height: auto;
-	transform: translate(calc(-50% - 110px), -50%);
-	margin: 0;
-	z-index: 10;
-	transition: transform 0.4s ease;
+	position: relative;
+    width: 30vw;         
+    min-width: 45px;    
+    height: auto;
+    margin: 0;
+    
+    
+    animation: floating-wb 12s ease-in-out infinite;
+    transition: transform 0.4s ease;
 }
 
 .butterfly01 {
-	position: fixed;        
-	left: 50%;
-	top: 50%; 
-	width: 400px;
-	height: auto;
-	transform: translate(calc(-50% + 110px), -50%);
-	margin: 0;
-	z-index: 10;
+	position: relative;
+    width: 28vw;        
+    min-width: 200px;   
+    height: auto;
+    margin: 0;
 }
+
 
 .butterfly:hover {
 	transform: scale(1.1);         
@@ -398,7 +445,6 @@ ul {
 
 .book {
 	position: fixed;        
-	left: ;
 	
 	width: 300px;
 	height: auto;
@@ -406,5 +452,3 @@ ul {
 	margin: 0;
 	z-index: 10;
 }
-
-
