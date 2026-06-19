@@ -119,30 +119,54 @@ ul {
 	transition: transform 0.4s ease;
 }
 
-.egg0 {
-	position: fixed;        
-	left: 30%;
-	top: 50%; 
-	width: 100px;
-	height: auto;
-	transform: translate(calc(-50% - 110px), -50%);
-	margin: 0;
-	z-index: 10;
-	animation: floating-wb 12s ease-in-out infinite;
-	transition: transform 0.4s ease;
-	
+.egg-wrapper {
+    
+    position: fixed; 
+    
+    
+    left: 50vw;
+    top: 50vh;
+    
+   
+    width: max-content; 
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    gap: 1.5vw; 
+    
+    
+    transform: translate(-50%, -50%);
+    
+    
+    z-index: 100; 
 }
 
-.egg01 {
-	position: fixed;        
-	left: 50%;
-	top: 50%; 
-	width: 490px;
-	height: auto;
-	transform: translate(calc(-50% + 110px), -50%);
-	margin: 0;
-	z-index: 10;
+
+.egg0 {
+    position: relative;
+    width: 6vw;         
+    min-width: 45px;    
+    height: auto;
+    margin: 0;
+    
+    
+    animation: floating-wb 12s ease-in-out infinite;
+    transition: transform 0.4s ease;
 }
+
+
+.egg01 {
+    position: relative;
+    width: 28vw;        
+    min-width: 200px;   
+    height: auto;
+    margin: 0;
+}
+
 
 .egg:hover {
 	transform: scale(1.1);         
